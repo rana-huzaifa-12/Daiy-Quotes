@@ -66,7 +66,7 @@
   width: 90%;
   height: 20%;
   color: white;
-  padding: 10px 0px;
+  padding: 10px 0;
   text-align: right;
   margin-top: -20px;
   font-size: 20px;
@@ -87,7 +87,7 @@ button {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: 600;
   border-radius: 10px;
-  margin: 0px 30px;
+  margin: 0 30px;
   border: 1px solid white;
   color: white;
   background: transparent;
@@ -130,8 +130,7 @@ h3 b {
   color: #27304f;
 }
 
-
-/* Small devices (sm) */
+/* Responsive Styles */
 @media (max-width: 640px) {
   .content {
     width: 90%;
@@ -163,8 +162,6 @@ h3 b {
   }
 }
 
-
-/* Medium devices (md) */
 @media (min-width: 641px) and (max-width: 1023px) {
   .content {
     width: 80%;
@@ -187,25 +184,12 @@ h3 b {
     font-size: 15px;
   }
 
-  button:hover {
-    background-color: white;
-    color: #27304f;
-    border: 2px solid black;
-  }
-
-  button:active {
-    background-color: rgb(30, 19, 85);
-    color: white;
-    transform: scale(0.95);
-  }
-
   .button-sec {
     height: auto;
     margin: 20px 0;
   }
 }
 
-/* Large devices (lg) */
 @media (min-width: 1024px) and (max-width: 1279px) {
   .content {
     width: 80%;
@@ -226,18 +210,6 @@ h3 b {
     padding: 14px 30px;
     margin: 0 25px;
     font-size: 16px;
-  }
-
-  button:hover {
-    background-color: white;
-    color: #27304f;
-    border: 2px solid black;
-  }
-
-  button:active {
-    background-color: rgb(30, 19, 85);
-    color: white;
-    transform: scale(0.95);
   }
 
   .button-sec {
