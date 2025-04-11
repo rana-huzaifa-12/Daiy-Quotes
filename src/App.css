@@ -1,0 +1,247 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content {
+  width: 1000px;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin-top: 100px;
+  box-shadow: rgba(163, 163, 163, 0.35) 0px 5px 15px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 26px;
+}
+
+.quote-content {
+  background-color: rgb(30, 19, 85);
+  border: 1px solid white;
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quote-text {
+  width: 90%;
+  margin-top: 30px;
+  padding: 10px 30px;
+  text-align: center;
+  color: white;
+}
+
+.typing {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid;
+  animation: typing 2.5s steps(80, end), blink .75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.quote-auth {
+  width: 90%;
+  height: 20%;
+  color: white;
+  padding: 10px 0px;
+  text-align: right;
+  margin-top: -20px;
+  font-size: 20px;
+}
+
+.button-sec {
+  height: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+
+button {
+  padding: 15px 35px;
+  font-size: 16px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 600;
+  border-radius: 10px;
+  margin: 0px 30px;
+  border: 1px solid white;
+  color: white;
+  background: transparent;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background-color: white;
+  color: #27304f;
+  border: 2px solid black;
+}
+
+button:active {
+  background-color: rgb(30, 19, 85);
+  color: white;
+  transform: scale(0.95);
+}
+
+h3 {
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h3 span {
+  color: yellow;
+}
+
+h3 b {
+  color: red;
+}
+
+.copy {
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: white;
+  width: 100%;
+}
+
+.copy h3 {
+  color: #27304f;
+}
+
+
+/* Small devices (sm) */
+@media (max-width: 640px) {
+  .content {
+    width: 90%;
+    margin-top: 50px;
+  }
+
+  .title {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .quote-text,
+  .quote-auth {
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 4px 12px;
+    margin: 10px;
+    font-size: 14px;
+  }
+
+  .button-sec {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+  }
+}
+
+
+/* Medium devices (md) */
+@media (min-width: 641px) and (max-width: 1023px) {
+  .content {
+    width: 80%;
+    margin-top: 70px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .quote-text,
+  .quote-auth {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  button {
+    padding: 12px 25px;
+    margin: 0 20px;
+    font-size: 15px;
+  }
+
+  button:hover {
+    background-color: white;
+    color: #27304f;
+    border: 2px solid black;
+  }
+
+  button:active {
+    background-color: rgb(30, 19, 85);
+    color: white;
+    transform: scale(0.95);
+  }
+
+  .button-sec {
+    height: auto;
+    margin: 20px 0;
+  }
+}
+
+/* Large devices (lg) */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .content {
+    width: 80%;
+    margin-top: 80px;
+  }
+
+  .title {
+    font-size: 26px;
+  }
+
+  .quote-text,
+  .quote-auth {
+    padding: 10px 25px;
+    font-size: 18px;
+  }
+
+  button {
+    padding: 14px 30px;
+    margin: 0 25px;
+    font-size: 16px;
+  }
+
+  button:hover {
+    background-color: white;
+    color: #27304f;
+    border: 2px solid black;
+  }
+
+  button:active {
+    background-color: rgb(30, 19, 85);
+    color: white;
+    transform: scale(0.95);
+  }
+
+  .button-sec {
+    height: auto;
+    margin: 25px 0;
+  }
+}
