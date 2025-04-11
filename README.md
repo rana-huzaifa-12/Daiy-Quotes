@@ -1,12 +1,21 @@
-# React + Vite
+# 🌟 Daily Quotes Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Daily Quotes Generator** is a simple yet inspiring React application that fetches random motivational quotes to brighten your day! With a click of a button, you'll get a fresh quote to uplift your mood. You can even copy your favorite quotes to share with friends or save for later.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🎯 **Random Quotes Generator** — Get a fresh, motivational quote every time you click "Generate".
+- ⚡ **Loading Indicator** — See a smooth loading text while fetching quotes.
+- 📋 **Copy to Clipboard** — Instantly copy the quote and author to your clipboard for sharing.
+- 💡 **Clean & Minimal UI** — Simple, elegant, and easy to use.
+- 💖 **Made with Love** — Crafted passionately by *Rana Huzaifa*.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+- **React.js** — Frontend library for building UI components.
+- **JavaScript (ES6+)** — App logic and interactions.
+- **CSS** — For styling the app.
+- **Fetch API** — For retrieving random quotes from the backend.
+
+> **Made with ❤️ by Rana Huzaifa**
