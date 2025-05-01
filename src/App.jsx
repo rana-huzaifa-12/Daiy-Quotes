@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react'
-import './App.css'
+import React, { useState } from 'react';
+import axios from 'axios';
+import './App.css';
 
 function App() {
 
@@ -11,17 +12,17 @@ function App() {
   const [loading, setLoading] = useState(false);
 
   const getQuote = async () => {
-    setLoading(true); // Start loading
+    setLoading(true);
 
-    // Show loading text :
     setQuote({
       text: '🔄 Loading quote...',
       author: ''
     });
 
     try {
-      const response = await fetch("/api/api/random");
-      const data = await response.json();
+      const response = await axios.get('/api/api/random');
+      const data = response.data;
+
       setQuote({
         text: data[0].q,
         author: data[0].a
@@ -33,7 +34,7 @@ function App() {
         author: ''
       });
     } finally {
-      setLoading(false); // Stop loading
+      setLoading(false);
     }
   };
 
@@ -68,13 +69,15 @@ function App() {
           </div>
 
         </div>
+
         <h3>Made With <b>&#9829;</b> By <span>Rana Huzaifa</span></h3>
+
         <div className='copy'>
           <h3>All Copyrights are Reserved &copy;</h3>
         </div>
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
